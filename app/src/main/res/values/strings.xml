@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Material_Design_App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="city_names">
+        <item>Washington</item>
+        <item>Baku</item>
+        <item>Toronto</item>
+        <item>Moscow</item>
+        <item>Istanbul</item>
+        <item>Tehran</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="country_names">
+        <item>USA</item>
+        <item>Azerbaijan</item>
+        <item>Canada</item>
+        <item>Russia</item>
+        <item>Turkey</item>
+        <item>Iran</item>
+    </string-array>
+</resources>
