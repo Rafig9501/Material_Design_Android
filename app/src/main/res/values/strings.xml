@@ -1,23 +1,39 @@
 <resources>
-    <string name="app_name">Material_Design_App</string>
+    <string name="app_name">Material Design</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string-array name="city_names">
-        <item>Washington</item>
-        <item>Baku</item>
-        <item>Toronto</item>
-        <item>Moscow</item>
-        <item>Istanbul</item>
-        <item>Tehran</item>
-    </string-array>
+    <string name="title_activity_navigation_screen">NavigationScreen</string>
 
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string-array name="city_names">
+        <item>   City</item>
+        <item>   Washington</item>
+        <item>   Baku</item>
+        <item>   Toronto</item>
+        <item>   Moscow</item>
+        <item>   Istanbul</item>
+        <item>   Tehran</item>
+    </string-array>
     <string-array name="country_names">
-        <item>USA</item>
-        <item>Azerbaijan</item>
-        <item>Canada</item>
-        <item>Russia</item>
-        <item>Turkey</item>
-        <item>Iran</item>
+        <item>   Country</item>
+        <item>   USA</item>
+        <item>   Azerbaijan</item>
+        <item>   Canada</item>
+        <item>   Russia</item>
+        <item>   Turkey</item>
+        <item>   Iran</item>
     </string-array>
 </resources>
