@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import com.example.material_design_app.R;
 import com.example.material_design_app.mainScreens.pojo.DashboardPojo;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class DashboardFragment extends Fragment implements DashboardContractor.View {
@@ -37,7 +36,7 @@ public class DashboardFragment extends Fragment implements DashboardContractor.V
 
         new DashboardPresenter(this);
 
-        presenter.getListOfItems();
+        presenter.getListOfSliders();
 
         return view;
 
@@ -45,15 +44,13 @@ public class DashboardFragment extends Fragment implements DashboardContractor.V
 
 
     @Override
-    public void setListOfItemsToView(List<DashboardPojo> listOfItemsToView) {
+    public void setListOfSlidersToView(List<DashboardPojo> listOfItemsToView) {
 
-        RecyclerView recyclerView = view.findViewById(R.id.dashboard_recycler_view);
-
-        RecyclerAdaptorDashboard adaptorDashboard = new RecyclerAdaptorDashboard(getActivity().getBaseContext(), listOfItemsToView);
+        DashboardRecyclerAdaptor adaptorDashboard = new DashboardRecyclerAdaptor(getContext(), listOfItemsToView);
 
         recyclerView.setAdapter(adaptorDashboard);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getBaseContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
     }
 

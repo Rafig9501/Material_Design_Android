@@ -13,12 +13,12 @@ import com.example.material_design_app.mainScreens.pojo.DashboardPojo;
 
 import java.util.List;
 
-public class RecyclerAdaptorDashboard extends RecyclerView.Adapter<DashboardViewHolder> {
+public class DashboardRecyclerAdaptor extends RecyclerView.Adapter<DashboardViewHolder> {
 
     Context context;
     List<DashboardPojo> dashboardPojoList;
 
-     RecyclerAdaptorDashboard(Context context, List<DashboardPojo> dashboardPojoList) {
+     DashboardRecyclerAdaptor(Context context, List<DashboardPojo> dashboardPojoList) {
         this.context = context;
         this.dashboardPojoList = dashboardPojoList;
     }
@@ -39,7 +39,6 @@ public class RecyclerAdaptorDashboard extends RecyclerView.Adapter<DashboardView
     public void onBindViewHolder(@NonNull DashboardViewHolder holder, int position) {
 
         holder.bindData(dashboardPojoList.get(position));
-
     }
 
 

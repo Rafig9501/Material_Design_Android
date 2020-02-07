@@ -80,37 +80,37 @@ public class NavigationClass extends AppCompatActivity implements NavigationView
 
             case R.id.dashboard:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new DashboardFragment()).commit();
+                        new DashboardFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.news:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new NewsFragment()).commit();
+                        new NewsFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.shopping:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new ShoppingFragment()).commit();
+                        new ShoppingFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.feed:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new FeedFragment()).commit();
+                        new FeedFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.expandable:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new ExpandableFragment()).commit();
+                        new ExpandableFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.list:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new ListFragment()).commit();
+                        new ListFragment()).addToBackStack(null).commit();
                 break;
 
             case R.id.settings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,
-                        new SettingsFragment()).commit();
+                        new SettingsFragment()).addToBackStack(null).commit();
                 break;
         }
 

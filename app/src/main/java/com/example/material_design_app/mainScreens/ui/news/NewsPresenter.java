@@ -14,6 +14,21 @@ public class NewsPresenter implements NewsContractor.Presenter {
 
         view.setPresenter(this);
 
-        this.interactor = new NewsDataInteractor();
+        this.interactor = new NewsDataInteractor(view.getContextOfActivity());
+
+    }
+
+
+    @Override
+    public void getListOfItems() {
+
+        if (view!=null){
+
+            if (interactor!=null){
+
+                view.setListOfItems(interactor.getNewsItems());
+
+            }
+        }
     }
 }

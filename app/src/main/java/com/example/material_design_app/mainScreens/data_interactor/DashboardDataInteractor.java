@@ -11,7 +11,6 @@ public class DashboardDataInteractor {
     public DashboardDataInteractor(Context context) {
     }
 
-
     public List <DashboardPojo> getDashboardItems() {
 
         List<DashboardPojo> dashboardPojoList = new ArrayList<>();

@@ -18,13 +18,13 @@ public class DashboardPresenter implements DashboardContractor.Presenter{
     }
 
     @Override
-    public void getListOfItems() {
+    public void getListOfSliders() {
 
         if (view != null) {
 
             if (interactor != null) {
 
-                view.setListOfItemsToView(interactor.getDashboardItems());
+                view.setListOfSlidersToView(interactor.getDashboardItems());
 
             }
         }

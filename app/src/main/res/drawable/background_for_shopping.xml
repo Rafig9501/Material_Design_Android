@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--    &lt;!&ndash; "shadow" &ndash;&gt;-->
+<!--    <item>-->
+<!--        <shape android:shape="oval">-->
+<!--            <solid android:color="#90807777"/>-->
+<!--            <size-->
+<!--                android:width="20dp"-->
+<!--                android:height="20sp">-->
+<!--            </size>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+
+    <item android:bottom="0.3dp">
+        <shape android:shape="oval">
+            <solid android:color="#90FCF2F2"/>
+            <gradient
+                android:useLevel="false"
+                android:type="linear"
+                android:startColor="#F77062"
+                android:endColor="#FE5196"
+                android:angle="45" />
+            <size
+                android:width="20dp"
+                android:height="20sp">
+            </size>
+        </shape>
+    </item>
+
+</layer-list>

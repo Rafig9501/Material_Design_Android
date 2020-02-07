@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/list_photo_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/list_image_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/list_title_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:text="The quick brown fox\njumps over the lazy dog"
+            android:textColor="#F77062"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/list_photo_1"
+            app:layout_constraintStart_toEndOf="@+id/list_photo_1"
+            app:layout_constraintTop_toTopOf="@+id/list_photo_1" />
+
+        <TextView
+            android:id="@+id/list_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today, 1:45 PM"
+            android:textColor="#878787"
+            android:textSize="12dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@+id/list_title_1"
+            app:layout_constraintTop_toBottomOf="@+id/list_title_1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

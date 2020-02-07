@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.material_design_app.R;
 import com.example.material_design_app.mainScreens.pojo.DashboardPojo;
 
-public class DashboardViewHolder extends RecyclerView.ViewHolder {
+class DashboardViewHolder extends RecyclerView.ViewHolder {
 
     ImageView dashboardAvatar;
     TextView avatarName;

@@ -9,13 +9,12 @@ public interface DashboardContractor {
 
     interface Presenter {
 
-        void getListOfItems();
-
+        void getListOfSliders();
     }
 
     interface View extends BaseView <DashboardPresenter> {
 
-        void setListOfItemsToView(List<DashboardPojo> listOfItemsToView);
+        void setListOfSlidersToView(List<DashboardPojo> listOfItemsToView);
 
     }
 }
